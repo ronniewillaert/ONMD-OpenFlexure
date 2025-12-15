@@ -15,6 +15,10 @@ and documentation associated with the manuscript:
 ## Hardware
 The system is based on the OpenFlexure microscope platform and a Raspberry Pi.
 
+## Documentation
+- User manual (PDF): documentation/PyONMD_User_Manual.pdf
+- Setup guide: documentation/Installation.md
+
 ## Software
 The acquisition and analysis software is written in Python and supports both onboard
 execution on a Raspberry Pi and offline analysis on standard desktop systems
