@@ -32,16 +32,23 @@ This folder contains analysis scripts for ONMD-OpenFlexure.
 Dependencies are listed in `requirements.txt`. Some workflows may require `ffmpeg`
 for video conversion (see the manuals in `documentation/`).
 
+## Software
+
+The acquisition and analysis software for optical nanomotion detection (ONMD)
+is written in Python and supports both onboard execution on a Raspberry Pi
+and offline analysis on standard desktop systems (macOS, Windows, Linux).
+
 ### Precompiled Windows executable
 
 A standalone Windows executable of the PyONMD analysis software
 (`PyONMD_Ana_02.exe`) is provided for users who do not wish to install
 Python dependencies.
 
-Due to file size limitations, the executable is hosted externally:
-- VUB SharePoint (public link): <PASTE LINK HERE>
+The executable is publicly available via Zenodo:
+https://zenodo.org/records/17940783
 
-The full source code is available in this repository.
+The full source code, documentation, and example datasets are available
+in this repository.
 
 
 ## Repository structure
