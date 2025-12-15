@@ -19,11 +19,18 @@ The system is based on the OpenFlexure microscope platform and a Raspberry Pi.
 - ONMD Onboard User Manual (PDF): documentation/ONMD Onboard User Manual.pdf
 - PyONMD User Manual (PDF): documentation/PYONMD User Manual.pdf
 
-## Software
-The acquisition and analysis software is written in Python and supports both onboard
-execution on a Raspberry Pi and offline analysis on standard desktop systems
-(macOS, Windows, Linux). Dependencies and usage instructions are provided in the
-documentation directory.
+# Analysis software
+
+This folder contains analysis scripts for ONMD-OpenFlexure.
+
+## PyONMD_Ana_02
+- `PyONMD_Ana_02.py`
+- `PyONMD_Ana_02_support.py`
+- `PyONMD_Ana_02.tcl`
+- `PyONMD_Ana_02.spec`
+
+Dependencies are listed in `requirements.txt`. Some workflows may require `ffmpeg`
+for video conversion (see the manuals in `documentation/`).
 
 ## Repository structure
 - `software/` – acquisition and analysis scripts  
