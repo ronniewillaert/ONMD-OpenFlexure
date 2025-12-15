@@ -1,5 +1,6 @@
 """
 Created by Mathieu Ribeaud
+"""
 
 Dependencies required :
 - matplotlib
@@ -1269,3 +1270,4 @@ else:
     # Examples : 
     # process_videos("path")
     full_comparison("path")
+
