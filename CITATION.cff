@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+title: "Optical Nanomotion Detection with the OpenFlexure Microscope"
+authors:
+  - family-names: Willaert
+    given-names: Ronnie
+  - family-names: Kasas
+    given-names: Sandor
+message: "If you use this software, please cite the Nature Methods article."
+license: MIT
