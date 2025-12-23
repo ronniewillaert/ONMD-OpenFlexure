@@ -53,10 +53,10 @@ in this repository.
 ## Demonstration videos
 
 - Sample preparation (MP4):  
-  [documentation/videos/sample_preparation_movie.mp4](documentation/videos/sample_preparation_movie.mp4)
+  [Sample preparation video](documentation/videos/sample_preparation_movie.mp4)
 
 - Example analysis videos (MP4):  
-  [examples/videos/](examples/videos/)
+  [Example analysis videos](examples/videos/)
 
 
 ## Repository structure
