@@ -53,7 +53,7 @@ in this repository.
 ## Demonstration videos
 
 - Sample preparation (MP4):  
-  [Sample preparation video](documentation/videos/sample_preparation_movie.mp4)
+  [Sample preparation video](documentation/videos/sample_preparation_video.mp4)
 
 - Example analysis videos (MP4):  
   [Example analysis videos](examples/videos/)
