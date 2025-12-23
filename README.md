@@ -8,68 +8,82 @@ and documentation associated with the manuscript:
 (Nature Methods, under consideration).
 
 ## Contents
-- Software for video acquisition and onboard/offline ONMD analysis
-- User manual and setup documentation
-- Example datasets for testing and validation
+
+- Onboard acquisition software for real-time ONMD measurements
+- Offline analysis software (PyONMD) for post-processing and quantification
+- User manuals and setup documentation
+- Example datasets and demonstration videos
 
 ## Hardware
-The system is based on the OpenFlexure microscope platform and a Raspberry Pi.
+The system is based on the OpenFlexure microscope platform (openflexure.org) and a Raspberry Pi.
 
 ## Documentation
-- ONMD Onboard User Manual (PDF): documentation/ONMD Onboard User Manual.pdf
-- PyONMD User Manual (PDF): documentation/PYONMD User Manual.pdf
+
+- **ONMD Onboard User Manual (PDF)**  
+  `documentation/ONMD Onboard User Manual.pdf`
+
+- **PyONMD User Manual (PDF)**  
+  `documentation/PYONMD User Manual.pdf`
 
 ## Software
 
-The acquisition and analysis software for optical nanomotion detection (ONMD)
-is written in Python and supports both onboard execution on a Raspberry Pi
-and offline analysis on standard desktop systems (macOS, Windows, Linux).
+The ONMD software stack consists of two complementary components:
+(1) real-time onboard acquisition on the OpenFlexure microscope, and
+(2) offline analysis on standard desktop systems.
 
-### Onboard acquisition
+### Onboard acquisition (OpenFlexure / Raspberry Pi)
+
 - `software/onboard/nanomotion_extension.py`
-  Python extension running on the OpenFlexure microscope (Raspberry Pi)
-  for real-time ONMD acquisition.
 
-### Offline analysis
+Python extension running directly on the OpenFlexure microscope
+(Raspberry Pi) for real-time optical nanomotion detection during
+image acquisition.
+
+See the *ONMD Onboard User Manual* for installation and usage.
+
+### Offline analysis (PyONMD)
+
 - `software/analysis/PyONMD_Ana_02/`
-  Python-based ONMD analysis software (PyONMD).
-  
-# Analysis software
 
-This folder contains analysis scripts for ONMD-OpenFlexure.
+Python-based ONMD analysis software for post-processing recorded videos
+on macOS, Windows, and Linux systems.
 
-## PyONMD_Ana_02
+Main components:
 - `PyONMD_Ana_02.py`
 - `PyONMD_Ana_02_support.py`
 - `PyONMD_Ana_02.tcl`
 - `PyONMD_Ana_02.spec`
 
-Dependencies are listed in `requirements.txt`. Some workflows may require `ffmpeg`
-for video conversion (see the manuals in `documentation/`).
+Dependencies are listed in `requirements.txt`. Some workflows may require
+`ffmpeg` for video conversion (see manuals in `documentation/`).
 
-### Precompiled Windows executable
+#### Precompiled Windows executable (PyONMD)
 
 A standalone Windows executable of the PyONMD analysis software
-(`PyONMD_Ana_02.exe`) is provided for users who do not wish to install
-Python dependencies.
+(`PyONMD_Ana_02.exe`) is available via Zenodo:
 
-The executable is publicly available via Zenodo:
 https://zenodo.org/records/17940783
 
-The full source code, documentation, and example datasets are available
-in this repository.
+This binary is provided for user convenience. The full source code
+remains available in this repository.
 
 ## Demonstration videos
 
-Videos are hosted directly in the repository and can be viewed or downloaded via GitHub.
-- Sample preparation (MP4): [Sample preparation video](documentation/videos/sample_preparation_movie.mp4)
-- Example analysis videos (MP4): [Example analysis videos](examples/videos/)
+Videos are hosted directly in the repository and can be viewed or
+downloaded via GitHub.
+
+- **Sample preparation (MP4)**  
+  [Sample preparation video](documentation/videos/sample_preparation_movie.mp4)
+
+- **Example analysis videos (MP4)**  
+  [Example analysis videos](examples/videos/)
 
 
 ## Repository structure
-- `software/` – acquisition and analysis scripts  
-- `documentation/` – user manual and setup guides  
-- `examples/` – example datasets and output files  
+
+- `software/` – onboard acquisition and offline analysis software
+- `documentation/` – user manuals and setup guides
+- `examples/` – example datasets and output files
 
 ## License
 This project is released under the MIT License.
