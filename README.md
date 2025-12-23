@@ -19,6 +19,21 @@ The system is based on the OpenFlexure microscope platform and a Raspberry Pi.
 - ONMD Onboard User Manual (PDF): documentation/ONMD Onboard User Manual.pdf
 - PyONMD User Manual (PDF): documentation/PYONMD User Manual.pdf
 
+## Software
+
+The acquisition and analysis software for optical nanomotion detection (ONMD)
+is written in Python and supports both onboard execution on a Raspberry Pi
+and offline analysis on standard desktop systems (macOS, Windows, Linux).
+
+### Onboard acquisition
+- `software/onboard/nanomotion_extension.py`
+  Python extension running on the OpenFlexure microscope (Raspberry Pi)
+  for real-time ONMD acquisition.
+
+### Offline analysis
+- `software/analysis/PyONMD_Ana_02/`
+  Python-based ONMD analysis software (PyONMD).
+  
 # Analysis software
 
 This folder contains analysis scripts for ONMD-OpenFlexure.
@@ -31,12 +46,6 @@ This folder contains analysis scripts for ONMD-OpenFlexure.
 
 Dependencies are listed in `requirements.txt`. Some workflows may require `ffmpeg`
 for video conversion (see the manuals in `documentation/`).
-
-## Software
-
-The acquisition and analysis software for optical nanomotion detection (ONMD)
-is written in Python and supports both onboard execution on a Raspberry Pi
-and offline analysis on standard desktop systems (macOS, Windows, Linux).
 
 ### Precompiled Windows executable
 
