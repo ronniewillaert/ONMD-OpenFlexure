@@ -52,6 +52,7 @@ in this repository.
 
 ## Demonstration videos
 
+Videos are hosted directly in the repository and can be viewed or downloaded via GitHub.
 - Sample preparation (MP4): [Sample preparation video](documentation/videos/sample_preparation_movie.mp4)
 - Example analysis videos (MP4): [Example analysis videos](examples/videos/)
 
